@@ -15,8 +15,8 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 CHANNEL_ID = int(os.getenv("CHANNEL_ID", "0"))
 
 CHECK_URL = "https://this-does-not-exist-12345.com/"
-CHECK_INTERVAL_SECONDS = 60
-FAIL_THRESHOLD = 3
+CHECK_INTERVAL_SECONDS = 10
+FAIL_THRESHOLD = 1
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
