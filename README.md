@@ -49,9 +49,9 @@ python bot.py <br>
 ### Outsourced Hosting:
 (Have another company keep the program open for you; more convenient, but will cost money in the long run)
 
-1. Clone this repository. If you don't know how to do that, download the two other files in this repository, and upload them to your own.
+1. Clone this repository. If you don't know how to do that, download the three other files in this repository (bot.py, image.png, and requirements.txt), and upload them to your own repository.
 2. Go to https://railway.com and make an account. Click "Deploy", then "GitHub Repository". Sign into your GitHub account, and click "Allow".
-3. Select the cloned/newly created repository containing bot.py and requirements.txt.
+3. Select the cloned/newly created repository containing bot.py, image.png, and requirements.txt.
 4. You should now see a big dashboard, with a rectangle labeled with your repositories' name in the center. Click that rectangle.
 5. A menu will have appeared on the right side of your screen. In this menu, select "Variables".
 6. Press the "New Variable" button. In the "VARIABLE_NAME" box, enter DISCORD_TOKEN. In the "VALUE or ${{REF}}" box, enter your Discord token from Bot Creation (Step 5). Press "Add".
