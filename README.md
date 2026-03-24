@@ -44,8 +44,8 @@ CHANNEL_ID=(Your Channel ID) <br>
 7. Type the following commands into the black box. Press Enter after every line: <br>
 pip install -U discord.py aiohttp python-dotenv <br>
 python bot.py <br>
-8. If everything is working, you should see a message in the window that says "Logged in as (Bot Name)#(Bot Numbers) (Channel ID), and after a few minutes, several messages saying "[OK] HTTP 200".
-9. As a final test, try using /status in the channel you chose. The bot should display a message showing the wiki's state (up or down), and the last request's result.
+8. If everything is working, you should see a message in the window that says "Logged in as (Bot Name)#(Bot Numbers) (Channel ID)", and after a few minutes, several messages saying "[OK] HTTP 200".
+9. As a final test, try using /status in your server. The bot should display a message showing the wiki's state (up or down), and the last request's result.
 10. Keep that window open. If that window ever closes, you will need to redo steps 5-8, excluding the "pip install" command in Step 7.
 
 ### Outsourced Hosting:
