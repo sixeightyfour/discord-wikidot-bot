@@ -1,5 +1,7 @@
 Discord bot for detecting when Wikidot decides to fuck itself again.
 
+![Example of WikiDown_Detector in Action!](assets/Readme1.png)
+
 # Features:
 
 * Once per minute HTTP request of scp-wiki.wikidot.com. If three of these requests fail in a row, the bot will send a message in a predetermined channel.
