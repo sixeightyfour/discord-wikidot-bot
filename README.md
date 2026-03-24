@@ -33,7 +33,7 @@ If you have done all of the previous steps correctly, you should have an offline
 
 1. Ensure you have Python installed on your computer. If you do not, download it at https://www.python.org/downloads/.
 2. Create a folder on your computer.
-3. Download bot.py from this repository. Put it into that folder.
+3. Download bot.py and image.png from this repository. Put them into that folder.
 4. Create a file called .env in that folder containing: <br>
 DISCORD_TOKEN=(Your Discord Token) <br>
 CHANNEL_ID=(Your Channel ID) <br>
