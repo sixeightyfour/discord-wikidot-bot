@@ -1,6 +1,6 @@
 Discord bot for detecting when Wikidot decides to fuck itself again.
 
-![Example of WikiDown_Detector in Action!](assets/Readme1.png)
+![Example of WikiDown_Detector in Action!](Readme1.png)
 
 # Features:
 
