@@ -13,7 +13,7 @@ except ImportError:
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 CHANNEL_ID = int(os.getenv("CHANNEL_ID", "0"))
 
-CHECK_URL = "https://scp-wiki.wikidot.com/"
+CHECK_URL = "https://this-does-not-exist-12345.com/"
 CHECK_INTERVAL_SECONDS = 60
 FAIL_THRESHOLD = 3
 
@@ -68,6 +68,7 @@ def build_status_embed() -> discord.Embed:
 
 def build_outage_embed(detail: str) -> discord.Embed:
     embed = discord.Embed(title="IT'S SO OVER")
+    embed.set_thumbnail(url="attachment://image.jpg")
     embed.description = (
         f"The site failed {consecutive_failures} checks in a row."
     )
