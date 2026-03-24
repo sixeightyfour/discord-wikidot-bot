@@ -10,6 +10,7 @@ try:
 except ImportError:
     pass
 
+
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 CHANNEL_ID = int(os.getenv("CHANNEL_ID", "0"))
 
@@ -68,11 +69,12 @@ def build_status_embed() -> discord.Embed:
 
 def build_outage_embed(detail: str) -> discord.Embed:
     embed = discord.Embed(title="IT'S SO OVER")
-    embed.set_thumbnail(url="attachment://image.jpg")
     embed.description = (
         f"The site failed {consecutive_failures} checks in a row."
     )
     embed.add_field(name="Latest Result", value=detail, inline=False)
+    embed.set_image(url="attachment://image.png")
+    
     return embed
 
 
@@ -111,7 +113,10 @@ async def monitor_site():
     print(f"[FAIL {consecutive_failures}/{FAIL_THRESHOLD}] {detail}")
 
     if consecutive_failures >= FAIL_THRESHOLD and not outage_announced:
-        await channel.send(embed=build_outage_embed(detail))
+        file = discord.File("image.png", filename="image.png")
+        embed = build_outage_embed(detail)
+
+        await channel.send(embed=embed, file=file)
         outage_announced = True
 
 
