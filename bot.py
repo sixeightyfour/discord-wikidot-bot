@@ -16,7 +16,7 @@ CHANNEL_ID = int(os.getenv("CHANNEL_ID", "0"))
 
 CHECK_URL = "https://scp-wiki.wikidot.com/"
 CHECK_INTERVAL_SECONDS = 60
-FAIL_THRESHOLD = 3
+FAIL_THRESHOLD = 10
 
 intents = discord.Intents.default()
 client = discord.Client(intents=intents)
